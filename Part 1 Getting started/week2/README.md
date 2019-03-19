@@ -19,3 +19,14 @@
     3. Stack stores local var, and it's deallocate when function finished
     4. Heap stores more persistent data, so we need to release it mannually
     5. Interpreted lang use GC to do this, like JVM of java and interpreter of Python
+
+5. Scan:
+    1. scan reads user input
+    2. takes a ptr as an arg
+    3. typed data is writeen to ptr
+    4. returns number of scanned items
+    5. ex: <br>
+        ``` var appleNum int``` <br>
+        ```fmt.Printf("number of apples?")```<br>
+        ```num, err := fmt.Scan(&appleNum)```<br>
+        ```fmt.Printf(appleNum)```<br>
