@@ -12,3 +12,15 @@
 
 3. Concurrency:
     1. Parallelism: difficulaties like when do task start / stop, what if one task needs data from another data, concurrent modification
+    2. Concurrency: enables parallelism by management of task execution, comm between tasks and sync between tasks
+    3. Go includes concurrency primitives
+    4. ```Goroutines``` represent concurrent tasks
+    5. ```Channels``` are used to communicate between tasks
+    6. ```Select``` enables task sync
+
+4. Workspace:
+    1. src: source code files
+    2. pkg: packages / libs
+    3. bin: executables
+    4. workspace dir defined by GOPATH env var (it's set during installation)
+    5. there must be one oackage called ```main``` and it needs a main() to start
